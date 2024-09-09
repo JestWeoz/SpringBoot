@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class BuildingAPI {
-    @GetMapping (value = "/api/building/")
-    public void building(@RequestParam (value = "name") String name) {
+    @GetMapping("/api/building/")
+    public void building(@RequestParam (name = "name") String name) {
         System.out.println(name);
     }
 }
